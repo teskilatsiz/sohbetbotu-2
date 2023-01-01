@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="stil.css"/>
+  <title>Teşkilatsız Sohbet Botu</title>
+</head>
+<body>
+
+  <div id="sohbet-botu">
+    <div id="mesajlar"></div>
+    <form id="mesaj-form">
+      <input id="mesaj-giris" type="text" placeholder="Mesajınızı yazın" />
+      <button id="mesaj-buton" type="submit">Gönder</button>
+    </form>
+
+    <footer id="alt-bari">
+      <ul id="alt-bari-menu">
+        <li><a href="#">Anasayfa</a></li>
+        <li><a href="#">Profil</a></li>
+        <li><a href="#">Ayarlar</a></li>
+        <li><a href="#" id="gecmis-menu">Geçmiş</a></li>
+      </ul>
+    </footer>
+    
+  <div id="gecmis-modal" class="modal">
+    <div class="modal-icerigi">
+      <span class="kapat">&times;</span>
+    <ul id="gecmis-listesi"></ul>
+  </div>
+
+<script src="sohbetbotu.js"></script>
+</body>
+</html>
